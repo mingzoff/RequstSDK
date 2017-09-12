@@ -6,23 +6,15 @@
 
 ####  2. 统一配置，方便后期维护。
 
-## 必要步骤：
-
-#### 目前因为SDK集成了一些第三方的库，所以必须导入以下库
-
-####  pod 'AFNetworking', '~> 3.0.4'
-####  pod 'YYCache', '~> 0.9.4'
-####  pod 'SVProgressHUD', '~> 2.1.2'
-####  pod 'YYModel'
 
 ## 使用方法：
 #### 导入SDK文件
 #### 创建自定义model并继承于HYModel
 
 ```
-#import <RequestSDK/HYModel.h>
+#import <RequestSDK/RequestHYModel.h>
 #import <RequestSDK/RequestTool.h>
-@interface LoginModel : HYModel
+@interface LoginModel : RequestHYModel
 +(void)Login;
 @end
 实现自定义方法：
